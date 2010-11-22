@@ -1,0 +1,360 @@
+@import url('reset.css');
+
+* {
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+
+/* == Generic == */
+body {margin: 0; padding: 0; font: 12px Verdana, Arial, sans-serif; color:#000000; background:#E7E7DE;}
+
+h1, h2 { font-size:2.8em; font-weight: bold; line-height:1em; margin-top:.5em; color: #333; }
+h1 { font-family: Georgia, "Times New Roman", Times, serif;  }
+h2 {font-size:1.8em; }
+h3, h4 {font-size:1.4em; margin-top:0.5em; line-height:1.6em; clear: both;font-weight: bold; color: #666;}
+
+a img { border:none; }
+p,ul,ol,dl { font-size:1.2em; margin-bottom:1.5em;line-height:1.8em; }
+
+p { margin-bottom: 0.5em; line-height: 1.7em }
+
+strong {font-weight:bold;}
+em {font-style:italic;}
+a, a:link,a:visited {text-decoration: none; color: #2069C0;}
+a:hover {color:#6CD1FF;}
+
+.clear {
+	clear: both;	
+}
+.spacer {
+	width: 100%;
+	height: 15px;
+}
+
+
+.inner {
+	margin: 4px 10px;	
+}
+
+span.more {
+	font-size: 0.8em;
+	color: #C30;
+	cursor:pointer;
+}
+
+.round {
+  -webkit-border-radius: 5px
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.rounder {
+  -webkit-border-radius:  10px
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+/** HEADER **/
+#header {
+	margin: 0 auto;
+	width: 960px;	
+	background:#FFFFFF url(../images/header-bg.png) no-repeat scroll 0 0;
+	height: 90px;
+}
+
+#header #logo {
+	padding-left: 10px;	
+}
+
+#header div#topmenu {
+	width: 151px;
+	height: 46px;
+	float: right;	
+	background: #999 url(../images/topmenu-bg.jpg) no-repeat;
+}
+#header div#topmenu #links {
+	overflow: hidden;
+	margin: 10px;
+}
+
+#header div#topmenu #links a {
+	color: #ffffff;
+	margin-left: 10px;
+}
+
+#header div#topmenu #links a:hover {
+	color:#FCF;
+}
+
+
+
+/** CONTENT **/
+#content {
+	background: #FFFFFF url(../images/content-bg.jpg) no-repeat;
+	width: 960px;
+	margin: 0 auto;
+	
+}
+
+#content h1 span, #content h2 span {
+	color: 	#2069C0;
+}
+
+#content h1 span a, #content h2 span a {
+	font-size: 1.4em;	
+}
+#content h1.item_title {
+	color: #C02516;	
+}
+
+#content div#inner {
+	padding: 5px 20px;	
+}
+
+
+#content div.left_side {
+	width: 630px;	
+	margin-right: 10px;	
+	float: left;
+}
+
+#content h2.page_title {
+	color: #fff;	
+	height: 29px;
+	width: 925px;	
+	background: url(../images/page-title-header.jpg) no-repeat;
+	padding-left:10px;
+	padding-top:2px;
+}
+#content h2.page_title a {
+	color: #fff;	
+}
+
+#content div.right_side {
+	float: left;	
+	width: 275px;	
+}
+
+
+#content div.right_side h3, #content div.right_side h4 {
+	color: #fff;	
+	font-size: 1.2em;
+	height: 26px;
+}
+
+#content div.right_side h3 {
+	background: url(../images/sidebox-header.jpg) no-repeat;
+}
+
+
+#content div#static_box {
+	background: url(../images/static-box.jpg);
+	width: 275px;
+	height:192px;
+	overflow: hidden;
+}
+#content div#credits_section h3 {
+	background: none;	
+}
+
+
+
+/** EXHIBIT YEARS AND SECTIONS */
+ul#exhibit_sections li {
+	border-bottom: 1px solid #E3E3E3;
+	font-size: 1.1em;
+	line-height: 20px;
+	padding: 10px 5px 7px;
+}
+
+div#year_selector.year_selector_toggled {
+	background-color:#A44033;
+	border:1px solid #84281C;
+	color: #FFC;
+}
+
+div#year_selector.year_selector_toggled a {
+	background:transparent url(../images/select_right.png) no-repeat scroll center top;
+}
+
+div#year_selector {
+	margin-top: 4px;
+	border: #CCC 1px solid;
+	line-height: 20px;
+	font-size: 1.4em;
+	height:31px;
+	line-height: 20px;
+	color:#696967;
+	cursor:pointer;
+	padding: 10px 5px 1px;
+}
+
+div#year_selector a {
+	background:transparent url(../images/select_right.png) no-repeat scroll center bottom;
+	display:block;
+	height:27px;
+	margin-top:-2px;
+	right:0;
+	width:43px;
+	float: right;
+}
+div#exhibit_years_large {
+	padding: 5px;
+	background-color:#A44033;
+	border:1px solid #84281C;
+	margin-top: 1px;
+}
+
+
+div#exhibit_years_large span {
+	display: block;
+	float: left;
+	padding: 14px;
+}
+
+div#exhibit_years_large span:hover {
+	background: #962010;	
+}
+
+div#exhibit_years_large span a {
+	color: #FFC;
+	font-size: 2.2em;
+}
+
+
+div#exhibit_years {
+	display: none;	
+	padding: 5px;
+	background-color:#A44033;
+	border:1px solid #84281C;
+	margin-top: 1px;
+}
+
+div#exhibit_years span {
+	display: block;
+	float: left;
+	padding: 8px;
+}
+
+div#exhibit_years span:hover {
+	background: #962010;	
+}
+
+div#exhibit_years span a {
+	color: #FFC;
+	font-size: 1.1em;
+}
+
+
+a.exhibit_year {
+	background: url(../images/year-bg.jpg) no-repeat;
+	overflow: hidden;
+	height: 55px;
+	width: 303px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+a.exhibit_year:hover {
+	background: url(../images/year-bg-over.jpg) no-repeat;
+}
+
+a.exhibit_year span.year, a.exhibit_year_simple span.year {
+	font-size: 22px;
+	font-weight: bold;
+	color: #FFF;
+	padding-left: 16px;
+}
+
+a.exhibit_year span.description {
+	font-weight: normal;
+	font-size: 12px;
+	color: #fff;
+	padding-left: 17px;
+}
+
+a.exhibit_year_simple {
+	background: url(../images/year-bg-small.jpg) no-repeat;
+	float: left;
+	margin-top: 10px;
+	width:100px;
+	height: 34px;
+	margin-right: 10px;
+
+}
+a.exhibit_year_simple span.year {
+	color: #2069C0;	
+}
+a.exhibit_year_simple:hover span.year {
+	color: #fff;	
+}
+a.exhibit_year_simple:hover {
+	background: url(../images/year-bg-small-over.jpg) no-repeat;
+}
+
+/** FEATURED ITEM */
+#content div.right_side #featured_item h2 {
+	margin: 0;	
+}
+#content div.right_side #featured_item h3 {
+	background: none;	
+}
+
+
+/** LAYOUTS **/
+
+.exhibit-item {
+	margin-bottom: 20px;
+	border-bottom: #CCC 1px dotted;
+}
+.gallery-thumbnails-text-bottom .exhibit-item, .gallery-thumbnails-text-top .exhibit-item {
+	border:4px solid #FFFFFF;
+	float:left;
+	height:auto;
+	margin:0;
+	padding: 0;
+	width: auto;
+}
+/* Exhibit item specifics */
+.exhibit-item-title {
+	font-size:1.4em; margin-top:0.5em; line-height:1.6em; clear: both;font-weight: bold; color: #666666;
+}
+.exhibit-item-title a {
+	font-size:2em; 
+}
+.exhibit-text, .exhibit-item-description {
+	color:#666;
+	font-size: 14px;
+	border: 1px #CCC dotted;
+	background: #E7E7DE;
+	padding: 10px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.exhibit-item-description {
+
+}
+
+/** FILE TYPES **/
+.item-file {
+	margin: 5px;	
+}
+.application-pdf {	
+	padding-left: 30px;
+	padding-top: 3px;
+	height: 24px;
+	background: url(../images/pdf_document.png) no-repeat;
+}
+
+
+/** FOOTER */
+
+#footer {
+	padding: 20px;
+}
+
+
+/**  tabs */
+@import url('tabs.css');

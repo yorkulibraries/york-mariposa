@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+		 * Required 
+		*/
+#loopedSlider .container {
+	width: 900px;
+	height:260px;
+	overflow:hidden;
+	position:relative;
+	cursor:pointer;
+	margin-left: -2px;
+}
+
+#loopedSlider .slides {
+	position:absolute;
+	top:0;
+	left:0;
+}
+#loopedSlider .slides div {
+	position:absolute;
+	top:0;
+	width:920px;
+	display:none;
+}
+#loopedSlider .slides div img {
+	xwidth: 300px;
+	border: none;
+	xheight: 260px;
+	float: left;
+	cursor: pointer;
+}
+.bordered {
+	border: 10px solid #444;
+}
+/*
+		 * Optional
+		*/
+		ul {
+	list-style: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#loopedSlider {
+	margin:18px auto;
+	width:920px;
+	position:relative;
+	clear:both;
+}
+ul.pagination {
+	list-style-type:none;
+	padding:0 0 10px 0;
+	margin:9px auto;
+	width:132px;
+}
+ul.pagination li {
+	float:left;
+	margin:0 5px;
+}
+ul.pagination a {
+	display:block;
+	width:12px;
+	padding-top:12px;
+	height:0;
+	overflow:hidden;
+	background-image:url(../images/pagination.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+ul.pagination li.active a {
+	background-position:0 -12px
+}
