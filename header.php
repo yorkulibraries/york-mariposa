@@ -17,7 +17,6 @@
 <?php echo exhibit_builder_exhibit_js('js/tabs') ?>
 <?php echo exhibit_builder_exhibit_js('js/main') ?>
 <?php echo exhibit_builder_exhibit_js('js/slider') ?>
-
 <!-- Plugin Stuff -->
 <?php plugin_header(); ?>
 
