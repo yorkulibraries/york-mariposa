@@ -9,22 +9,7 @@
    
    
    	<div class="left_side">
-	
-		<p id='preview'>The player will show in this paragraph</p>
-		<script type='text/javascript' src='/ex/jwplayer/swfobject.js'></script>
-		<script type='text/javascript'>
-		$(document).ready(function() {
-				var filename = $("#itemfiles div.audio-mpeg object param[name=src]").attr("value");				
-				var s1 = new SWFObject('/ex/jwplayer/player.swf','player','400','300','9');
-				s1.addParam('allowfullscreen','true');
-				s1.addParam('allowscriptaccess','always');
-				s1.addParam('flashvars','file=' + filename);
-				s1.write('preview');
-				$("#itemfiles div.audio-mpeg object").hide();
-		});
-		
-		</script>
-	
+			
 	    <div id="itemfiles">
 			<?php echo display_files_for_item(); ?>
 		</div>
