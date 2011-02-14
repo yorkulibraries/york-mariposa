@@ -358,3 +358,11 @@ a.exhibit_year_simple:hover {
 
 /**  tabs */
 @import url('tabs.css');
+
+
+/** SPECIFIC TO EXHIBIT LAYOUTS **/
+.text-image-right .exhibit-item { margin-left: 20px; }
+.text-image-left .exhibit-item { margin-right: 20px; }
+.text-image-right .exhibit-item-title, .text-image-right .exhibit-item-title  { padding-top: 10px; } 
+.text-image-right .exhibit-item-title a, .text-image-right .exhibit-item-title  a {font-size: 24px;}
+.text-image-right .exhibit-item, .text-image-left .exhibit-item { border: none;}
