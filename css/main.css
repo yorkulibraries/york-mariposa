@@ -366,3 +366,7 @@ a.exhibit_year_simple:hover {
 .text-image-right .exhibit-item-title, .text-image-right .exhibit-item-title  { padding-top: 10px; } 
 .text-image-right .exhibit-item-title a, .text-image-right .exhibit-item-title  a {font-size: 24px;}
 .text-image-right .exhibit-item, .text-image-left .exhibit-item { border: none;}
+
+
+.image-list-right-thumbs .exhibit-item img, .image-list-left-thumbs .exhibit-item img,
+.image-list-left .exhibit-item img, .image-list-right .exhibit-item img { margin-top: 10px; }
