@@ -309,11 +309,11 @@ a.exhibit_year_simple:hover {
 	border-bottom: #CCC 1px dotted;
 }
 .gallery-thumbnails-text-bottom .exhibit-item, .gallery-thumbnails-text-top .exhibit-item {
-	border:4px solid #FFFFFF;
+	/* border:4px solid #FFFFFF; */
 	float:left;
 	height:auto;
 	margin:0;
-	padding: 0;
+	padding: 10px;
 	width: auto;
 }
 /* Exhibit item specifics */
