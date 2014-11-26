@@ -30,49 +30,49 @@
 			<div>
             <a href="#">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_1/ASC06361.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1814">
+            <a href="<?php echo url('items'); ?>/show/1814">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_1/ASC05994.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1740">
+            <a href="<?php echo url('items'); ?>/show/1740">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_1/ASC05920.jpg')); ?>" alt="Image" /></a>           
             </div>
 			<div>
-            <a href="http://archives.library.yorku.ca/items/show/1541">
+            <a href="<?php echo url('items'); ?>/show/1541">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_2/ASC06236.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1522">
+            <a href="<?php echo url('items'); ?>/show/1522">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_2/ASC06213.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1698">
+            <a href="<?php echo url('items'); ?>/show/1698">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_2/ASC05876.jpg')); ?>" alt="Image" /></a>
             </div>		
             <div>
-            <a href="http://archives.library.yorku.ca/items/show/1527">
+            <a href="<?php echo url('items'); ?>/show/1527">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_3/ASC06221.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1760">
+            <a href="<?php echo url('items'); ?>/show/1760">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_3/ASC05940.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1745">
+            <a href="<?php echo url('items'); ?>/show/1745">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_3/ASC05925.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1744">
+            <a href="<?php echo url('items'); ?>/show/1744">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_3/ASC05924.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1334">
+            <a href="<?php echo url('items'); ?>/show/1334">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_3/ASC05650.jpg')); ?>" alt="Image" /></a>
             </div>		
             <div>
-            <a href="http://archives.library.yorku.ca/items/show/1930">
+            <a href="<?php echo url('items'); ?>/show/1930">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_4/ASC06078.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1800">
+            <a href="<?php echo url('items'); ?>/show/1800">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_4/ASC05980.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1743">
+            <a href="<?php echo url('items'); ?>/show/1743">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_4/ASC05923.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1732">
+            <a href="<?php echo url('items'); ?>/show/1732">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_4/ASC05910.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1601">
+            <a href="<?php echo url('items'); ?>/show/1601">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_4/program1970thumbnail.jpg')); ?>" alt="Image" />
             </div>		
             <div>
-            <a href="http://archives.library.yorku.ca/items/show/1687">
+            <a href="<?php echo url('items'); ?>/show/1687">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_5/ASC05865.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1660">
+            <a href="<?php echo url('items'); ?>/show/1660">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_5/ASC05823.jpg')); ?>" alt="Image" /></a>
-            <a href="http://archives.library.yorku.ca/items/show/1289">
+            <a href="<?php echo url('items'); ?>/show/1289">
             <img src="<?php echo html_escape(img('mariposa-cycle/group_5/ASC05602.jpg')); ?>" alt="Image" /></a>
             </div>			
 		</div>
