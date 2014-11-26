@@ -3,7 +3,7 @@
     $sections = get_exhibit_sections($exhibit);
 ?>
 
-<?php echo head(array('bodyclass' => 'exhibits', 'exhibit' => $exhibit)); ?>
+<?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
 
 <h1 class="item_title"><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
 
@@ -78,10 +78,10 @@
 </div> <!-- end left_side -->
     
 <div class="right_side">
-
+<!--
     <h3><span class="inner">Pages...</span></h3>
     <div class="inner"><?php //echo exhibit_builder_page_nav(); ?></div>	
-
+-->
     <?php if (metadata('item', 'has tags')): ?>
     <h3><span class="inner">Tags</span></h3>
     <div class="tags inner">

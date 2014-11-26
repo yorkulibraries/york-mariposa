@@ -10,9 +10,7 @@
 <?php endif; ?>
 
 <?php
-if (@$exhibit) {
-    $titleParts[] = strip_formatting(@$exhibit->title);
-} else if (isset($title)) {
+if (isset($title)) {
     $titleParts[] = strip_formatting($title);
 }
 $titleParts[] = option('site_title');
@@ -49,10 +47,10 @@ $titleParts[] = option('site_title');
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 
 	<div id="header">
-    	<a href="<?php echo exhibit_builder_exhibit_uri(@$exhibit); ?>"><img id="logo" alt="yorku logo" border="0" src="<?php echo img('yorku-logo.gif'); ?>"/></a>
+    	<a href="<?php echo exhibit_builder_exhibit_uri(); ?>"><img id="logo" alt="yorku logo" border="0" src="<?php echo img('yorku-logo.gif'); ?>"/></a>
 		<div id="topmenu">
          <div id="links">
-		 	<a href="<?php echo exhibit_builder_exhibit_uri(@$exhibit); ?>">Mariposa</a> 
+		 	<a href="<?php echo exhibit_builder_exhibit_uri(); ?>">Mariposa</a> 
 			<a href="<?php echo url('exhibits'); ?>">Exhibits</a>            
 	        </div>
         </div>

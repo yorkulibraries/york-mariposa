@@ -4,7 +4,7 @@
     $featuredItem = random_featured_item(true, 1);
 ?>
 
-<?php echo head(array('bodyclass' => 'exhibits', 'exhibit' => $exhibit)); ?>		 
+<?php echo head(array('bodyclass' => 'exhibits', 'title' => $exhibit->title)); ?>		 
 
 <h1><?= $exhibit->title ?></h1>
 <h3 id="description_short"><?php echo neat_trim(strip_tags($exhibit->description), 200) ?> <span class="more" onclick="$('#description_text, #description_short').slideToggle('slow');">more</span></h3>

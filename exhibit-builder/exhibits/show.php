@@ -6,7 +6,7 @@ $current_page = $exhibit_page->parent_id ? $exhibit_page : $exhibit_page->getFir
 $sections = get_exhibit_sections($exhibit);
 ?>
 
-<?php echo head(array('bodyclass' => 'exhibits', 'exhibit' => $exhibit)); ?>
+<?php echo head(array('bodyclass' => 'exhibits', 'title' => $exhibit->title)); ?>
 
 <h1><?= html_escape($exhibit->title)  ?>:  <span><?= html_escape($section->title) ?></span></h1>
 
