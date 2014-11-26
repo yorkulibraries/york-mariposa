@@ -6,15 +6,14 @@
 
 <?php echo head(array('bodyclass' => 'exhibits', 'exhibit' => $exhibit)); ?>		 
 
-        <h1><?= $exhibit->title ?></h1>
-		<h3 id="description_short"><?php echo neat_trim(strip_tags($exhibit->description), 200) ?> <span class="more" onclick="$('#description_text, #description_short').slideToggle('slow');">more</span></h3>
-		<div id="description_text" style="display: none;">				
-			<?= $exhibit->description ?> 
-            <span class="more" onclick="$('#description_text, #description_short').slideToggle('slow');">hide</span>
-        </div>
-         
-         <div class="spacer"></div>
-     
+<h1><?= $exhibit->title ?></h1>
+<h3 id="description_short"><?php echo neat_trim(strip_tags($exhibit->description), 200) ?> <span class="more" onclick="$('#description_text, #description_short').slideToggle('slow');">more</span></h3>
+<div id="description_text" style="display: none;">				
+	<?= $exhibit->description ?> 
+    <span class="more" onclick="$('#description_text, #description_short').slideToggle('slow');">hide</span>
+</div>
+ 
+<div class="spacer"></div>
  
 <div id="loopedSlider">	
    	<ul class="pagination">
@@ -76,73 +75,72 @@
             <img src="<?php echo html_escape(img('mariposa-cycle/group_5/ASC05602.jpg')); ?>" alt="Image" /></a>
             </div>			
 		</div>
-
 	</div>	
-	
-</div>
+</div> <!-- end loopedSlider -->
+       
+<div class="clear"></div>
+        
+<div class="left_side">
+    <h2>Browse By Year</h2>
+    
+    <div class="spacer"></div>
+        
+	<div id="exhibit_years_large" class="round">
+		<?php foreach($sections as $section): ?>			                          
+        	<?php if (is_numeric(trim($section->title))): ?>
+          	<span class="round"><a href="<?php echo exhibit_builder_exhibit_uri($exhibit, $section); ?>"><?php echo html_escape($section->title); ?></a></span>		
+			<?php endif; ?>         
+		<?php endforeach; ?>
+		<div class="clear"></div>
+    </div>
+        
+    <h3>More</h3>
+        
+ 	<ul id="exhibit_sections">
+	    <?php foreach($sections as $section): ?>
+            <?php if (!is_numeric($section->title)): ?>
+                <li><a class="exhibit_section" href="<?php echo exhibit_builder_exhibit_uri($exhibit, $section); ?>"><?php echo html_escape($section->title); ?></a></li>	
+			<?php endif; ?>         
+		<?php endforeach; ?>
+    </ul>
+    <div class="clear"></div>
+</div> <!-- end left_side -->
+        
+<div class="right_side">        	
+    <div class="spacer"></div>
+    <div id="featured_item">
+        <h2>Featured Image</h2>
+        <div style="padding: 10px;">
+            <?php if ($featuredItem) echo link_to_item(item_image('square_thumbnail', array(), 0, $featuredItem), array('class'=>'image'), 'show', $featuredItem); ?>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div id="static_box">
+    	<h4 class="inner">Credits</h4>
+		<p class="inner"><?php echo html_escape($exhibit->credits); ?></p>
+    </div>
+    <div class="spacer"></div>
+    <img src="<?php echo html_escape(img('mariposa-logo.jpg')); ?>" alt="Image" />
+    <div id="parners_box">
+    	<h2>Partners</h2>
+        <img src="<?php echo html_escape(img('partners-logos/mariposa-foundation.jpg')); ?>" height="100" width="100" />
+        <p>The Mariposa Folk Foundation</p>
+        <p>&nbsp;</p>
+        <img src="<?php echo html_escape(img('partners-logos/canadian-heritage.gif')); ?>" />
+		<p>Department of Canadian Heritage</p>
+        <p>&nbsp;</p>
+		<img src="<?php echo html_escape(img('partners-logos/canadian-council-of-archives.jpg')); ?>" />
+       <p>Canadian Council of Archives</p>
+    </div>
+</div> <!-- end right_side -->
+        
+<div class="clear"></div>
+<div class="spacer"></div>
+        
 <script type="text/javascript" charset="utf-8">
 	$(function(){
 		$('#loopedSlider').loopedSlider();
 	});
 </script>
-
-       
-        <div class="clear"></div>
-        
-        <div class="left_side">
-        <h2>Browse By Year</h2>
-        
-        <div class="spacer"></div>
-        
-		<div id="exhibit_years_large" class="round">
-			<?php foreach($sections as $section): ?>			                          
-            	<?php if (is_numeric(trim($section->title))): ?>
-              	<span class="round"><a href="<?php echo exhibit_builder_exhibit_uri($exhibit, $section); ?>"><?php echo html_escape($section->title); ?></a></span>		
-				<?php endif; ?>         
-    		<?php endforeach; ?>
-    		<div class="clear"></div>
-        </div>
-        
-        <h3>More</h3>
- 		<ul id="exhibit_sections">
-    	    <?php foreach($sections as $section): ?>
-                <?php if (!is_numeric($section->title)): ?>
-                    <li><a class="exhibit_section" href="<?php echo exhibit_builder_exhibit_uri($exhibit, $section); ?>"><?php echo html_escape($section->title); ?></a></li>	
-    			<?php endif; ?>         
-    		<?php endforeach; ?>
-        </ul>
-            <div class="clear"></div>
-		</div>
-        
-        <div class="right_side">
-        	
-            <div class="spacer"></div>
-            <div id="featured_item">
-                <h2>Featured Image</h2>
-                <div style="padding: 10px;">
-                    <?php if ($featuredItem) echo link_to_item(item_image('square_thumbnail', array(), 0, $featuredItem), array('class'=>'image'), 'show', $featuredItem); ?>
-                </div>
-            </div>
-            <div class="spacer"></div>
-            <div id="static_box">
-            	<h4 class="inner">Credits</h4>
-				<p class="inner"><?php echo html_escape($exhibit->credits); ?></p>
-            </div>
-            <div class="spacer"></div>
-            <img src="<?php echo html_escape(img('mariposa-logo.jpg')); ?>" alt="Image" />
-            <div id="parners_box">
-            	<h2>Partners</h2>
-                <img src="<?php echo html_escape(img('partners-logos/mariposa-foundation.jpg')); ?>" height="100" width="100" />
-                <p>The Mariposa Folk Foundation</p>
-                <p>&nbsp;</p>
-                <img src="<?php echo html_escape(img('partners-logos/canadian-heritage.gif')); ?>" />
-				<p>Department of Canadian Heritage</p>
-                <p>&nbsp;</p>
-				<img src="<?php echo html_escape(img('partners-logos/canadian-council-of-archives.jpg')); ?>" />
-               <p>Canadian Council of Archives</p>
-            </div>
-        </div>
-        
-		<div class="clear"></div>
-        <div class="spacer"></div>
+  
 <?php echo foot(); ?>
