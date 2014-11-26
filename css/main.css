@@ -303,18 +303,23 @@ a.exhibit_year_simple:hover {
 
 
 /** LAYOUTS **/
+.layout-file-text .exhibit-items.left {
+  margin-bottom: 20px;
+}
 
 .exhibit-item {
 	margin-bottom: 20px;
 	border-bottom: #CCC 1px dotted;
 }
-.gallery-thumbnails-text-bottom .exhibit-item, .gallery-thumbnails-text-top .exhibit-item {
+.gallery-thumbnails-text-bottom .exhibit-item, .gallery-thumbnails-text-top .exhibit-item,
+.layout-gallery .exhibit-gallery-item
+ {
 	/* border:4px solid #FFFFFF; */
 	float:left;
 	height:auto;
-	margin:0;
+	margin:0 !important;
 	padding: 5px;
-	width: auto;
+	width: auto !important;
 }
 /* Exhibit item specifics */
 .exhibit-item-title {
@@ -323,7 +328,7 @@ a.exhibit_year_simple:hover {
 .exhibit-item-title a {
 	font-size:2em; 
 }
-.exhibit-text, .exhibit-item-description {
+.exhibit-text, .exhibit-item-description, .exhibit-block.layout-text {
 	color:#666;
 	font-size: 14px;
 	border: 1px #CCC dotted;

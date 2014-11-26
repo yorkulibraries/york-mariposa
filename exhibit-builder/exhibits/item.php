@@ -1,4 +1,4 @@
-<?php exhibit_builder_exhibit_head(array('bodyclass' => 'exhibits')); ?>
+<?php head(array('bodyclass' => 'exhibits')); ?>
 
 
 	<h1 class="item_title"><?php echo item('Dublin Core', 'Title'); ?></h1>
@@ -101,11 +101,11 @@ var idcomments_post_url;
 			<?php endif; ?>         
 		<?php endforeach; ?>
         </ul>
-         <img src="<?php echo html_escape(exhibit_builder_exhibit_img('images/mariposa-logo.jpg')); ?>" alt="Image" />
+         <img src="<?php echo html_escape(img('mariposa-logo.jpg')); ?>" alt="Image" />
     </div>
     <div class="clear"></div>
    
    
 			
 
-<?php exhibit_builder_exhibit_foot(); ?>
+<?php foot(); ?>
