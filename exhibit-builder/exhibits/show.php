@@ -4,6 +4,7 @@ $exhibit = $exhibit_page->getExhibit();
 $section = $exhibit_page->parent_id ? $exhibit_page->getParent() : $exhibit_page;
 $current_page = $exhibit_page->parent_id ? $exhibit_page : $exhibit_page->getFirstChildPage(); 
 $sections = get_exhibit_sections($exhibit);
+set_current_record('exhibit_page', $current_page);
 ?>
 
 <?php echo head(array('bodyclass' => 'exhibits', 'title' => $exhibit->title)); ?>
